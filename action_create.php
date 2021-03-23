@@ -7,7 +7,7 @@ $nama     = $_POST['nama'];
 $user_name    = $_POST['user_name'];
 $password    = $_POST['password'];
  
-$data = mysqli_query($mysqli, "INSERT INTO user SET nama='$nama', user_name='$user_name', password='$password'") or die ("data salah : ".mysqli_error($mysqli));
+$data = mysqli_query($mysqli, "INSERT INTO user VALUES ('','','','','')") or die ("data salah : ".mysqli_error($mysqli));
  
 if ($data) {
 echo "Berhasil Input Data";
